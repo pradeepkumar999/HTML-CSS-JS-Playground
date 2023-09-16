@@ -44,7 +44,7 @@ Check out full-scale projects and applications.
 - [Project 2](projects/project2/): Description of the project.
 
 
-If you have any questions or suggestions, please feel free to [open an issue](https://github.com/pradeepkumar999/HTML-CSS-JS-Playground/issues) or [contact me](yerrajaman.pradeep@gmail.com).
+If you have any questions or suggestions, please feel free to [open an issue](https://github.com/pradeepkumar999/HTML-CSS-JS-Playground/issues)
 
 Happy coding!
 
