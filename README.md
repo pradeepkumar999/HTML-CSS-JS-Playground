@@ -20,8 +20,7 @@ Welcome to my code repository! This repository contains a collection of HTML, CS
 Here you will find various HTML code snippets and templates.
 
 - [HTML Snippet 1](html-snippets/snippet1.html): Description of the snippet.
-- [HTML Template 1](html-templates/template1.html): Description of the template.
-
+- [HTML Template 1](html-templates/template1.html): 
 ## CSS
 
 Explore CSS styles and designs in this section.
