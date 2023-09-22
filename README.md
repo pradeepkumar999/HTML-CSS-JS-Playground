@@ -33,7 +33,6 @@ Explore CSS styles and designs in this section.
 Discover JavaScript code examples and functions.
 
 - [JavaScript Function 1](javascript-functions/function1.js): Description of the function.
-- [JavaScript Utility 1](javascript-utilities/utility1.js): Description of the utility.
 
 ## Projects
 
