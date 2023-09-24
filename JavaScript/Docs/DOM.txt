@@ -1,0 +1,98 @@
+Dom(document object model)
+1.//manupulating HTML
+document;//entire html document
+document.firstElementChild;//everything inside htnl
+document.firstElementChild.firstElementChild;//head section
+document.firstElementChild.lastElementChild;//body section
+var heading=document.firstElementChild.lastElementChild.firstElementChild;//h1 heading storing
+i)heading.innerHTML="Good Bye";
+ii)heading.style.color="red";
+
+2.document.querySelector("input").click();
+
+3.
+i)properties
+*(Get property)-car.colour;
+*(Set property)-car.noOfSeats=2;
+
+-innerHTML
+-style
+-firstChild
+
+
+ii)methods
+*car.drive();
+
+-click()
+-appendChild()
+-setAttribute()
+
+4.-plural
+document.getElementsByTagName("li");//gives array of items
+document.getElementsByTagName("li")[2].style.color="purple";
+document.getElementsByTagName("li").length;
+
+5.-plural
+document.getElementsByClassName("btn");//gives array
+
+6.-single
+document.getElementById("title");//gives one
+
+7.
+
+  document.querySelector("h1");
+  document.querySelector("#title");
+  document.querySelector(".btn");
+  document.querySelector("li a");//anchor tag inside a list
+  document.querySelector("li.item");
+  document.querySelector("#list a");
+  document.querySelector("h1");
+  document.querySelector("#list.item");//if same name and multiple then we get first
+  document.querySelectorAll("#list .item");
+
+8. DOM CSS styles(camelcase)
+   specify values as sting
+
+  i) font-size
+   style.fontSize
+
+  ii) padding 30%
+    style.padding="30%"
+
+9.document.querySelector("button").classList;
+  document.querySelector("button").classList.add("invisible");
+  document.querySelector("button").classList.remove("invisible");
+  document.querySelector("button").classList.toggle("invisible");
+
+10.document.querySelector("h1").classList.add("huge");
+   .invisible{
+    visibility: hidden;
+}
+
+.huge{
+    font-size: 100px;
+    color:blue;
+}
+
+11.//difference between innerHTML,textContent
+ document.getElementById("title").innerHTML="Good Bye";
+ document.getElementById("title").textContent="Good Bye";
+ 
+document.querySelector("h1").innerHTML;
+'<strong>Hello</strong>'
+document.querySelector("h1").textContent;
+'Hello'
+
+12.//manipulating HTML attributes
+
+   -href 
+   -class
+document.querySelector("a");
+<a href=​"www.google.com">​Google​</a>​
+document.querySelector("a").attributes;
+NamedNodeMap {0: href, href: href, length: 1}
+document.querySelector("a").getAttribute("href");
+'www.google.com'
+document.querySelector("a").setAttribute("href","www.bing.com");
+undefined
+

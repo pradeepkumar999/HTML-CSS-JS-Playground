@@ -1,0 +1,303 @@
+var name= "Angela";
+name.slice(0,3)
+//output Ang
+
+var name="pradeep kumar is your name";
+name.length;
+alert("number 
+
+
+3.Math.floor(); //round0f number
+
+4.function ageconert(age){
+  var years=90-age;
+  var weeks=years*52;
+  var days=weeks*7;
+console.log("your ramain with years of "+years+" weeks "+weeks+" days "+days);
+}
+ageconert(21);
+
+
+5.function ageconert(age){
+ var inweeks=age*52;
+  return inweeks;
+}
+var weeks=ageconert(21);
+
+console.log(weeks);
+
+6.var bmi=bmiIndex(58,1.5);
+
+function bmiIndex(weight,height){
+  var index=weight/(height*height); //Math.pow(height,2)  //Math.round(index)
+  return index;
+}
+
+console.log(bmi);
+
+
+7.//Random number generation
+var n=Math.Random();
+0-0.9999999999999999(16 digits)
+i)var n=Math.random();
+      n=n*6;
+      n=Math.floor(n)+1;    [1-6]
+
+8.var youName=prompt("enter you name");
+var yourLove=prompt("enter your love name");
+
+var n=Math.random();
+      n=n*6;
+      n=Math.floor(n)+1;
+alert("your love percentage is "+n);
+
+
+9.//comparators
+== //does not care data types
+=== //care about data types
+!==
+>
+<
+>=
+<=
+
+
+10.
+&&
+||
+!
+
+var youName=prompt("enter you name");
+var yourLove=prompt("enter your love name");
+
+var n=Math.random();
+      n=n*100;
+      n=Math.floor(n)+1;
+alert("your love percentage is "+n);
+
+if(n>70){
+      alert("pure");
+}
+
+if(n>30&&n<=70){
+      alert("simple");
+}
+else{
+      alert("better");
+}
+
+
+11.//Leap year challenge
+i)divible by 4
+expect
+ii)not divisible by 100
+iii)divisible by 400
+
+function leap(year){
+
+  if(year%4===0){
+        if(year%100===0){
+              if(year%400===0){
+                    return true;
+              }
+              else{
+                    return false;
+              }
+              
+        }
+        else{
+              return true;
+        }
+}
+      else{
+            return false;
+      }
+
+}
+
+var condition=leap(1600);
+
+console.log(condition);
+
+
+12.//Arrays(Collection)
+
+i)var guestList=["sai","ramesh","nagaraju","shiva","pradeep"];
+console.log(guestList[1]);
+
+ii)var guestList=["sai","ramesh","nagaraju","shiva","pradeep"];
+var find=prompt("enter the guest name");
+guestList.includes(find);
+
+iii)var guestList=["sai","ramesh","nagaraju","shiva","pradeep"];
+var find=prompt("enter the guest name");
+if(guestList.includes(find)){
+  alert("welcome "+find);
+}
+else{
+  alert("sorry next time");
+}
+
+13.
+//arr.push(); push at last element of the array
+//arr.pop();  pops last element array
+
+var arr=[2,5,6,7,8];
+arr.push(9);
+console.log(arr);
+arr.pop();
+console.log(arr);
+
+14.
+/*print elements in a array from 1-100 but
+1.print fizz instead of 3 multiples
+2.print buzz instead of 5 multiples
+3.print fizzbuzz incase of divible by both 3 and 5 
+*/
+
+var output=[];
+var count=1;
+function fizzBuzz()
+{
+  if(count%3===0){
+    if(count%5==0){
+      output.push("FizzBuzz");
+    }
+    else{
+    output.push("Fizz");
+    }
+  }
+  else if(count%5===0){
+    output.push("Buzz");
+  }
+  
+  else{
+  output.push(count);
+  }
+  count++;
+  console.log(output);
+}
+
+15.
+//randomly selecting a person to buy lunch from the given list of names
+function buyLunch(nameList) {
+  var numberOfPersons = nameList.length;
+  var randomPersonPosition = Math.floor(Math.random() * numberOfPersons);
+  var person = nameList[randomPersonPosition];
+  return person + " is going to buy lunch today.";
+}
+
+var names = ["sai", "ramesh", "nagaraju", "shiva", "pradeep"];
+
+var selectedPerson = buyLunch(names);
+console.log(selectedPerson);
+
+
+16.//while loops
+
+/*print elements in a array from 1-100 but
+1.print fizz instead of 3 multiples
+2.print buzz instead of 5 multiples
+3.print fizzbuzz incase of divible by both 3 and 5 
+*/
+
+var output=[];
+var count=1;
+function fizzBuzz()
+{
+  while(count<=100){
+  if(count%3===0){
+    if(count%5==0){
+      output.push("FizzBuzz");
+    }
+    else{
+    output.push("Fizz");
+    }
+  }
+  else if(count%5===0){
+    output.push("Buzz");
+  }
+  
+  else{
+  output.push(count);
+  }
+  count++;
+  }
+  console.log(output);
+
+}
+fizzBuzz();
+
+17.
+/*
+99 bottles of beer song
+*/
+
+var count=99;
+
+function song(count){
+  while(count>0){
+    console.log(count+" bottles of beer on the wall," +count+" bottles of beer.");
+    count--;
+    console.log("Take one down and pass it around,"+count+" bottles of beer on the wall. ")
+  }
+  if(count===0){
+    console.log("No bottles of beer on the wall,No bottles of beer.");
+    console.log("Take none down and pass it around, zero bottles of beer on the wall. ")
+
+  }
+}
+
+song(count);
+
+18.
+/*
+1-100 using for loop
+*/
+
+var arr=[];
+function number(count){
+  for(var count=1;count<=100;count++){
+    arr.push(count);
+     
+  }
+  return arr;
+}
+
+var print=number(count);
+
+console.log(print);
+
+19./*
+fibonacci series
+*/
+
+function fibonacci(num) {
+  var output = [];
+
+  if (num >= 1) {
+    output.push(0);
+  }
+  if (num >= 2) {
+    output.push(1);
+  }
+
+  for (var i = 2; i < num; i++) {
+    var value = output[i - 1] + output[i - 2];
+    output.push(value);
+  }
+
+  return output;
+}
+
+var ans = fibonacci(2); // Replace 10 with the desired number of Fibonacci numbers you want
+console.log(ans);
+
+20.
+
+
+
+
+ 
+
+
